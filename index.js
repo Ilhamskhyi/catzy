@@ -93,10 +93,7 @@ const connectToWhatsApp = async () => {
 			status.stop()
 			reconnect.stop()
 			starting.stop()
-			console.log(mylog('Server Ready ✓'))
-			lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut 
-			? connectToWhatsApp()
-			: console.log(mylog('Wa web terlogout...'))
+			console.log(mylog('Server Ready ✓')
 		}
 	})
 	conn.ev.on('creds.update', () => saveState)
