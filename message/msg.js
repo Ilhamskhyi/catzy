@@ -1028,7 +1028,7 @@ const hq = {
 			    xfar.Youtube(args[1]).then( data => {
 			      var teks = `*Youtube Audio Downloader*\n\n*≻ Title :* ${data.title}\n*≻ Quality :* ${data.medias[7].quality}\n*≻ Size :* ${data.medias[7].formattedSize}\n*≻ Url Source :* ${data.url}\n\n_wait a minute sending media..._`
 			      kahfzxy.sendMessage(from, { image: { url: data.thumbnail }, caption: teks }, { quoted: msg })
-			      kahfzxy.sendMessage(from, { document: { url: data.medias[7].url }, fileName: `${data.title}.mp3`, mimetype: 'audio/mp3' }, { quoted: msg })
+			      kahfzxy.sendMessage(from, { audio: { url: data.medias[7].url }, fileName: `${data.title}.mp3`, mimetype: 'audio/mp3' }, { quoted: troli })
 			      limitAdd(sender, limit)
 				}).catch(() => reply(mess.error.api))
 			    break
