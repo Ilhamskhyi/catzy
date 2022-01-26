@@ -93,7 +93,7 @@ const connectToWhatsApp = async () => {
 			status.stop()
 			reconnect.stop()
 			starting.stop()
-			console.log(mylog('Server Ready ✓')
+			console.log('Server Ready ✓')
 		}
 	})
 	conn.ev.on('creds.update', () => saveState)
