@@ -2,13 +2,13 @@
   "name": "chitanda-md",
   "version": "1.0.0",
   "description": "Simple whatsapp bot with multi device.",
-  "main": "index.js",
+  "main": "npm start",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "npm start"
   },
   "author": "irfanhariyanto",
   "license": "MIT",
