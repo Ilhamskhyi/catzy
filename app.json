@@ -1,0 +1,11 @@
+{
+  "name": "FRM",
+  "description": "HEROKU",
+  "repository": "https://github.com/frmdeveloper/frmdev",
+  "logo": "https://www.frm.rf.gd/Logo_FRM-picsay.png",
+  "keywords": ["VPS", "HEROKU", "Free", "Firefox", "novnc", "VNC", "anycloud", "cloud-downloader", "rclone-backdoor", "index-backdoor", "rclone", "index"],
+
+  "website": "",
+  "repository": "",
+  "stack": "container"
+ }
