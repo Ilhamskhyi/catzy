@@ -35,7 +35,7 @@
 
 ## Bugs and Tester
 * Jika kamu menemukan bug jangan lupa buka Issues
-* Info Lebih Lanjut, Chat [owner-ilham](https://wa.me/6877106021)
+* Info Lebih Lanjut, Chat [owner-ilham](https://wa.me/687710621)
 
 # Requirements
 * [Node.js](https://nodejs.org/en/)
