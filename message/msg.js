@@ -760,6 +760,7 @@ case prefix+'owner': {
                 kahfzxy.sendMessage(from, { contacts: { displayName: 'owner catzy - bot md', contacts: [{ vcard }] } }, { quoted: troli })	    
             }
             break
+
 			case prefix+'cekprem':
             case prefix+'cekpremium':
                 if (!isPremium) return reply(`Kamu bukan user premium, kirim perintah *${prefix}daftarprem* untuk membeli premium`)
@@ -1208,6 +1209,7 @@ const hq = {
 				  for (let x of data) {
 					teks += `*Nama :* ${x.nama}\n*Link :* ${x.link}\n\n`
 				  }
+
 				  reply(teks)
 				  limitAdd(sender, limit)
 				}).catch(() => reply(mess.error.api))
@@ -1245,7 +1247,17 @@ const hq = {
 				  if (yt.length < jumlah) jumlah = yt.length
 				  var no = 0
 				  let txt = `*YOUTUBE SEARCH*
-
+case prefix+'owner': {
+                let vcard = 'BEGIN:VCARD\n' // metadata of the contact card
+                    + 'VERSION:3.0\n' 
+                    + 'N:;catzy;;;'
+                    + 'FN:catzy\n' // full name
+                    + 'ORG:developer tel catzy;\n' // the organization of the contact
+                    + 'TEL;type=CELL;type=VOICE;waid=6281111111111:6281111111111\n' // WhatsApp ID + phone number
+                    + 'END:VCARD'
+                kahfzxy.sendMessage(from, { contacts: { displayName: 'owner catzy - bot md', contacts: [{ vcard }] } }, { quoted: troli })	    
+            }
+            break
  *Data berhasil didapatkan*
  *Hasil pencarian dari ${q}*
  
