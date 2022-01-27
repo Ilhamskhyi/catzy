@@ -22,10 +22,16 @@ const time = moment(new Date()).format('HH:mm:ss DD/MM/YYYY')
 let setting = JSON.parse(fs.readFileSync('./config.json'));
 let session = `./${setting.sessionName}.json`
 const { state, saveState } = useSingleFileAuthState(session)
-
+const app = require('express')()
+http.listen(process.env.PORT, () => {
+     console.log(`Web berjalan`)
+})
+app.get('*', () => {
+res.send('AWOKAWOK')
+})
 function title() {
       console.clear()
-	  console.log(chalk.bold.green(figlet.textSync('𝑪𝑨𝑻𝒁𝒀 - 𝑩𝑶𝑻 𝑴𝑫', {
+	  console.log(chalk.bold.green(figlet.textSync('ð‘ªð‘¨ð‘»ð’ð’€ - ð‘©ð‘¶ð‘» ð‘´ð‘«', {
 		font: 'Standard',
 		horizontalLayout: 'default',
 		verticalLayout: 'default',
@@ -83,7 +89,7 @@ const connectToWhatsApp = async () => {
               
 	conn.multi = true
 	conn.nopref = false
-	conn.prefa = '𝑪𝑨𝑻𝒁𝒀 - 𝑩𝑶𝑻 𝑴𝑫'
+	conn.prefa = 'ð‘ªð‘¨ð‘»ð’ð’€ - ð‘©ð‘¶ð‘» ð‘´ð‘«'
 	conn.ev.on('messages.upsert', async m => {
 		if (!m.messages) return;
 		var msg = m.messages[0]
@@ -97,7 +103,7 @@ const connectToWhatsApp = async () => {
 			status.stop()
 			reconnect.stop()
 			starting.stop()
-			console.log(mylog('Server Ready �?'))
+			console.log(mylog('Server Ready âœ?'))
 			lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut 
 			? connectToWhatsApp()
 			: console.log(mylog('Wa web terlogout...'))
