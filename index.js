@@ -23,7 +23,7 @@ let setting = JSON.parse(fs.readFileSync('./config.json'));
 let session = `./${setting.sessionName}.json`
 const { state, saveState } = useSingleFileAuthState(session)
 const app = require('express')()
-http.listen(process.env.PORT, () => {
+app.listen(process.env.PORT, () => {
      console.log(`Web berjalan`)
 })
 app.get('*', () => {
