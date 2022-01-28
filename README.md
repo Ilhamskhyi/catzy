@@ -1,5 +1,5 @@
 <p align="center">
-<img src="/images?q=tbn:ANd9GcStH_A0WKtnRtD_Bla6B71LjtP-GtYOkacYsg&usqp=CAU" alt="CATZY BOT" width="500"/>
+<img src="https://telegra.ph/file/b135d015c85c836ba0add.jpg/images?q=tbn:ANd9GcStH_A0WKtnRtD_Bla6B71LjtP-GtYOkacYsg&usqp=CAU" alt="CATZY BOT" width="500"/>
 
 
 </p>
