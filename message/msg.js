@@ -757,14 +757,6 @@ case prefix+'owner': {
                     + 'ORG:𝙸𝚕𝚑𝚊𝚖 - 𝚜𝚔𝚑𝚢𝚣𝚒;\n' // the organization of the contact
                     + 'TEL;type=CELL;type=VOICE;waid=687710621:+687710621\n' // WhatsApp ID + phone number
                     + 'END:VCARD'
-
-let vcard = 'BEGIN:VCARD\n' // metadata of the contact card
-                    + 'VERSION:3.0\n' 
-                    + 'N:;catzy;;;'
-                    + 'FN:catzy\n' // full name
-                    + 'ORG:developer tel catzy;\n' // the organization of the contact
-                    + 'TEL;type=CELL;type=VOICE;waid=6281111111111:6281111111111\n' // WhatsApp ID + phone number
-                    + 'END:VCARD'
                 kahfzxy.sendMessage(from, { contacts: { displayName: 'owner catzy - bot md', contacts: [{ vcard }] } }, { quoted: troli })	    
             }
             break
