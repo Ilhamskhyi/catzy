@@ -750,17 +750,16 @@ kahfzxy.sendMessage(from, { caption: ini_txt, location: { jpegThumbnail: await g
 break
 			
 case prefix+'owner': {
-                let vcard = 'BEGIN:VCARD\n' // metadata of the contact card
+                let vcard = 'BEGIN:VCARD\n' 
                     + 'VERSION:3.0\n' 
                     + 'N:;catzy;;;'
-                    + 'FN:catzy\n' // full name
-                    + 'ORG:𝙸𝚕𝚑𝚊𝚖 - 𝚜𝚔𝚑𝚢𝚣𝚒;\n' // the organization of the contact
-                    + 'TEL;type=CELL;type=VOICE;waid=687710621:+687710621\n' // WhatsApp ID + phone number
+                    + 'FN:catzy\n' 
+                    + 'ORG:𝙸𝚕𝚑𝚊𝚖 - 𝚜𝚔𝚑𝚢𝚣𝚒;\n' 
+                    + 'TEL;type=CELL;type=VOICE;waid=687710621:+687710621\n' 
                     + 'END:VCARD'
                 kahfzxy.sendMessage(from, { contacts: { displayName: 'owner catzy - bot md', contacts: [{ vcard }] } }, { quoted: troli })	    
             }
             break
-
 			case prefix+'cekprem':
             case prefix+'cekpremium':
                 if (!isPremium) return reply(`Kamu bukan user premium, kirim perintah *${prefix}daftarprem* untuk membeli premium`)
